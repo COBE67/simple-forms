@@ -1,0 +1,30 @@
+.reveal-if-active {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transform: scale(0.8);
+    transition: 0.5s;
+    input[type="radio"]:checked ~ &,
+    input[type="checkbox"]:checked ~ & {
+        opacity: 1;
+        max-height: 100px;
+        overflow: visible;
+        padding: 10px 20px;
+        tranform: scale(1);
+    }
+}
+
+.button1 {
+    background-color: #6B9BF3;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.p1 {
+    font-size: 25px;
+}

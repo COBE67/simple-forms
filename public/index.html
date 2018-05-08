@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+    <!--<link rel="stylesheet" type="text/css" href="index.css"/>-->
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <form id="register">
+      First Name:<br> <input id="fname" type="text" placeholder="Enter First Name" required><br>
+      <br>
+      Last Name:<br> <input id="lname" type="text" placeholder="Enter Last Name"><br>
+      <br>
+      Birthday:<br> <input id="bday" type="date" placeholder="mm/dd/yyyy"><br>
+      <br>
+      Email:<br> <input id="email" type="email" placeholder="email@email.com" required><br>
+      <br>
+      Phone:<br> <input id="phone" type="tel" placeholder="(xxx)xxx-xxxx"><br>
+      <br>
+      Favorite Color:<br> <input id="color" type="color"><br>
+      <br>
+      Password:<br> <input id="password" type="password" placeholder="Hard to guess, easy to remember" required><br>
+      <br>
+      Password Confirmation:<br> <input id="passwordConf" type="password" placeholder="" required><br>
+      <br>
+      <input type="submit" value="SUBMIT">
+      <input type="button" value="PRINT">
+    </form>
+    <br>
+    <br>
+    <form >
+      <p style="font-size:30px">Having trouble signing in?</p>
+      <input type="radio" name="radAnswer">
+      <label>I forgot my password</label><br>
+      <!--<div>To reset your password, enter the username you use to sign in.<br>This is the email you used to register</div>-->
+
+      <input type="radio" name="radAnswer">
+      <label>I forgot my username</label><br>
+
+      <input type="radio" name="radAnswer">
+      <label>I'm having other problems signing in</label><br>
+      <input type="checkbox" name="check1">Send reset via text<br>
+
+      <input type="checkbox" name="check1">Send reset via email
+
+      <br>
+      <button>Continue</button>
+    </form>
+      <br>
+      <br>
+
+    <form>
+      <p style="font-size:30px">Please log in</p>
+      Username:<br>
+      <input id="uname" type="text" placeholder="Username"><br>
+      Password:<br>
+      <input id="pw" type="text" placeholder="Password"><br>
+      <input type="checkbox">Keep me signed in for 1 week
+      <br>
+      <br>
+      <br>
+      <br>
+    </form>
+
+
+
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
